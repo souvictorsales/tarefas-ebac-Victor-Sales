@@ -1,9 +1,11 @@
-public class CalculoMedia {
+package Modulo8;
+
+public class Calculadora {
     public static void main(String args[]) {
-        calculoMedia();
+        cMedia();
     }
 
-    public static void calculoMedia() {
+    public static void cMedia() {
         int num1 = 10;
         int num2 = 7;
         int num3 = 5;
