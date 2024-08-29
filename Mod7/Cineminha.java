@@ -2,6 +2,7 @@
  * @author Victor Sales
  */
 
+import  java.util.Scanner;
 public class Cineminha {
     public static void main(String[] args) {
 
@@ -20,6 +21,19 @@ public class Cineminha {
             System.out.println(filme);
         }
 
+        // Coletando valor escolhido pelo usuário
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o número do filme escolhido: ");
+        int escolha = scanner.nextInt();
+
+        if (escolha >= 1 && escolha <= filmes.length){
+            System.out.println("Você escolheu: "+ filmes[escolha - 1].substring(3));    
+        } else {
+            System.out.println("Escolha inválida. Por favor, escolha um número entre 1 e" +filmes.length + ".");
+        }
+
+        scanner.close();
     
     }
 }
