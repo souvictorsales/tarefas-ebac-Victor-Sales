@@ -1,1 +1,3 @@
-# Exercícios do curso de programação back-end Java da EBAC.
+# Olá, Mundo!
+
+Aqui vou colocar todas as atividades do curso da EBAC!
