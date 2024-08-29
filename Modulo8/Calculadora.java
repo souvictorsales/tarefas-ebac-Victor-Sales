@@ -13,6 +13,6 @@ public class Calculadora {
 
         int num5 = (num1 + num2 + num3 + num4)/4;
 
-        System.out.println(num5);
+        System.out.println("A média dos 4 números é: " +num5);
     }
 }
