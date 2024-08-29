@@ -8,15 +8,15 @@ public class Cineminha {
 
         // Defini aqui alguns filmes que eu gosto como exemplo
         String[] filmes = {
-            "1. O poderoso chefão",
-            "2. Pulp fiction",
-            "3. Gênio indomável",
-            "4. Curtindo a vida adoidado",
+            "1. O Poderoso Chefão",
+            "2. Pulp Fiction",
+            "3. Gênio Indomável",
+            "4. Curtindo a Vida Adoidado",
             "5. Whiplash"
         };
 
         // O usuário escolhe um entre as opções
-        System.out.println("Escolha um filme digitando o número correspondente");
+        System.out.println("Escolha um filme digitando o número correspondente:");
         for (String filme : filmes) {
             System.out.println(filme);
         }
