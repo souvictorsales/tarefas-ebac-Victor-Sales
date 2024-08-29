@@ -28,7 +28,7 @@ public class Cineminha {
         int escolha = scanner.nextInt();
 
         if (escolha >= 1 && escolha <= filmes.length){
-            System.out.println("Você escolheu: "+ filmes[escolha - 1].substring(3) +". Tenha um bom filme!!");    
+            System.out.println("Você escolheu: "+ filmes[escolha - 1].substring(3) +".\nTenha um bom filme!!");    
         } else {
             System.out.println("Escolha inválida. Por favor, escolha um número entre 1 e" +filmes.length + ".");
         }
