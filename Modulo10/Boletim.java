@@ -19,6 +19,15 @@ public class Boletim {
 
     System.out.printf("A média das quatro notas do aluno(a) é: %.2f%n", media);
 
+    //CORREÇÃO PARA INCREMENTAR O RESULTADO
+    if (media >= 7){
+        System.out.println("Aluno(a) está APROVADO!!!");
+    } else if (media >= 5){
+        System.out.println("Aluno(a) está de RECUPERAÇÃO.");
+    } else{
+        System.out.println("Aluno(a) está REPROVADO.");
+    }
+
     scanner.close();
 }
 }
