@@ -305,7 +305,7 @@ public class Layout extends JFrame {
         }
     }//GEN-LAST:event_jMenuSairActionPerformed
     private void cadastrarCliente() {
-        Cliente cliente = new Cliente(
+        ClienteCarros cliente = new ClienteCarros(
                 jTextFieldCpf.getText(),
                 jTextFieldEmail.getText(),
                 jTextFieldNome.getText(),
@@ -320,7 +320,7 @@ public class Layout extends JFrame {
     }
     
     private void atualizarCliente() {
-        Cliente cliente = clienteDAO.buscarPorCPF(jTextFieldCpf.getText());
+        ClienteCarros cliente = clienteDAO.buscarPorCPF(jTextFieldCpf.getText());
         if (cliente != null) {
             cliente.setEmail(jTextFieldEmail.getText());
             cliente.setNome(jTextFieldNome.getText());
@@ -338,10 +338,10 @@ public class Layout extends JFrame {
     
     private void listarClientes() {
         System.out.println("Método listarClientes() chamado"); // Depuração
-        List<Cliente> clientes = clienteDAO.listarTodos();
+        List<ClienteCarros> clientes = clienteDAO.listarTodos();
         System.out.println("Número de clientes recuperados: " + clientes.size()); // Depuração
         tableModel.setRowCount(0);
-        for (Cliente cliente : clientes) {
+        for (ClienteCarros cliente : clientes) {
             System.out.println("Adicionando cliente: " + cliente.getNome() + ", " + cliente.getCpf() + ", " + cliente.getTelefone() + ", " + cliente.getEmail());
             tableModel.addRow(new Object[]{
                     cliente.getNome(),

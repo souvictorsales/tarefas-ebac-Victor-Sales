@@ -11,15 +11,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ClienteDAOImpl implements ClienteDAO {
-    private final List<Cliente> clientes = new ArrayList<>();
+    private final List<ClienteCarros> clientes = new ArrayList<>();
 
     @Override
-    public void adicionar(Cliente cliente) {
+    public void adicionar(ClienteCarros cliente) {
         clientes.add(cliente);
     }
 
     @Override
-    public void atualizar(Cliente cliente) {
+    public void atualizar(ClienteCarros cliente) {
         for (int i = 0; i < clientes.size(); i++) {
             if (clientes.get(i).getCpf().equals(cliente.getCpf())) {
                 clientes.set(i, cliente);
@@ -34,7 +34,7 @@ public class ClienteDAOImpl implements ClienteDAO {
     }
 
     @Override
-    public Cliente buscarPorCPF(String cpf) {
+    public ClienteCarros buscarPorCPF(String cpf) {
         return clientes.stream()
                 .filter(cliente -> cliente.getCpf().equals(cpf))
                 .findFirst()
@@ -42,7 +42,7 @@ public class ClienteDAOImpl implements ClienteDAO {
     }
 
     @Override
-    public List<Cliente> listarTodos() {
+    public List<ClienteCarros> listarTodos() {
         System.out.println("Método listarTodos() chamado, retornando " + clientes.size() + " clientes");
         return new ArrayList<>(clientes);
     }

@@ -10,9 +10,9 @@
 import java.util.List;
 
 public interface ClienteDAO {
-    void adicionar(Cliente cliente);
-    void atualizar(Cliente cliente);
+    void adicionar(ClienteCarros cliente);
+    void atualizar(ClienteCarros cliente);
     void remover(String cpf);
-    Cliente buscarPorCPF(String cpf);
-    List<Cliente> listarTodos();
+    ClienteCarros buscarPorCPF(String cpf);
+    List<ClienteCarros> listarTodos();
 }

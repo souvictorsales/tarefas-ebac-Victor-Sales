@@ -1,4 +1,4 @@
-public class Cliente {
+public class ClienteCarros {
     public static void main(String[] args) {
         Fabrica fabricaA = new AFabrica();
         Fabrica fabricaB = new BFabrica();
