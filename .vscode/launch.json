@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TheMain",
+            "request": "launch",
+            "mainClass": "Modulo17.TheMain",
+            "projectName": "tarefas-ebac-Victor-Sales_d07f82f3"
+        },
+        {
+            "type": "java",
             "name": "ClienteCarros",
             "request": "launch",
             "mainClass": "ClienteCarros",
